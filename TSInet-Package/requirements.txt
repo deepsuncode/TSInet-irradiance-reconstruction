@@ -1,0 +1,7 @@
+pandas
+numpy
+sklearn
+keras_self_attention
+scipy
+tensorflow==1.14
+tensorflow-gpu==1.14
