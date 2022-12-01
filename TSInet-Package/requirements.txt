@@ -1,9 +1,9 @@
-pandas
 numpy
 sklearn
 scikit-learn
 keras
 keras_self_attention
+pandas
 scipy
 tensorflow==1.14
 tensorflow-gpu==1.14
