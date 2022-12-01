@@ -1,6 +1,8 @@
 pandas
 numpy
 sklearn
+scikit-learn
+keras
 keras_self_attention
 scipy
 tensorflow==1.14
