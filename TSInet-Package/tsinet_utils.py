@@ -140,7 +140,7 @@ def save_model(trained_model, model_dir='models', model_type='tsinet', model_nam
         model_name = model_name[1:]
     file_ext = '.sav'
     if int(tf_version[0]) > 1 :
-        file_ext = ''
+        file_ext = '.h5'
         
     model_file = model_dir + os.sep +  model_name + "_model" + file_ext
     
