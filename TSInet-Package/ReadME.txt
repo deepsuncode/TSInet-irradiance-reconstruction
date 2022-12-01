@@ -11,23 +11,28 @@ Other versions are not tested, but they should work if you have the environment 
 Python Packages:
 A) For Python 3.6.8 and Tensorflow 1.14
 The following python packages and modules are required to run TSInet:
-pandas
 numpy
 sklearn
+scikit-learn
+keras
 keras_self_attention
-pickle
+pandas
 scipy
 tensorflow==1.14
 tensorflow-gpu==1.14
 
+
 B) For Python >= 3.8.6 and Tensorflow 2.4
-pandas
 numpy
-sklearn
+keras
 keras_self_attention
+pandas
+sklearn
+scikit-learn
 scipy
 tensorflow==2.4
 tensorflow-gpu==2.4
+
 
 To install the required packages, you may use Python package manager “pip” as follow:
 1.	Copy the above packages into a text file,  ie “requirements.txt”
@@ -38,6 +43,7 @@ Note: There is a requirements file already created for you to use that includes 
        The files are located in the root directory of the TSInet package.
 Note: Python packages and libraries are sensitive to versions. Please make sure you are using the correct packages and libraries versions as specified above.
 Also, note that Python >= 3.8.x does not support Tensorflow version 1.14, therefore, please follow the versions specified above.
+Note: The Tensorflow backend warning is thrown when you use tensorflow 2 and its safe to ignore the warning.
 
 Cuda Installation Package:
 You may download and install Cuda v 10.0 from https://developer.nvidia.com/cuda-10.0-download-archive
