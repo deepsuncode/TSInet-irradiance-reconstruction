@@ -1,5 +1,4 @@
 numpy
-sklearn
 scikit-learn
 keras
 keras_self_attention
