@@ -12,7 +12,6 @@ Python Packages:
 A) For Python 3.6.8 and Tensorflow 1.14
 The following python packages and modules are required to run TSInet:
 numpy
-sklearn
 scikit-learn
 keras
 keras_self_attention
@@ -28,7 +27,6 @@ keras
 keras_self_attention
 pandas
 sklearn
-scikit-learn
 scipy
 tensorflow==2.4
 tensorflow-gpu==2.4
