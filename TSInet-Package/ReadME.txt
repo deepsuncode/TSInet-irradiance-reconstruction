@@ -26,7 +26,7 @@ numpy
 keras
 keras_self_attention
 pandas
-sklearn
+scikit-learn
 scipy
 tensorflow==2.4
 tensorflow-gpu==2.4
