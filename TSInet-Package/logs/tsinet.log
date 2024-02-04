@@ -1,0 +1,133 @@
+[2024-02-04 14:28:48]  args: {'epochs': 20, 'attention_layer': True, 'num_units': 400, 'normalize_data': True, 'verbose': False, 'model_verbose': 2} 
+[2024-02-04 14:28:48]  data_train_validate_file_name: train_data/SORCE_TSI.csv 
+[2024-02-04 14:28:48]  Removing instrument_accuracy_1au (W/m^2) 
+[2024-02-04 14:28:48]  Removing instrument_precision_1au (W/m^2) 
+[2024-02-04 14:28:48]  Removing solar_standard_deviation_1au (W/m^2) 
+[2024-02-04 14:28:48]  Removing measurement_uncertainty_1au (W/m^2) 
+[2024-02-04 14:28:48]  Removing tsi_true_earth (W/m^2) 
+[2024-02-04 14:28:48]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2024-02-04 14:28:48]  Removing instrument_precision_true_earth (W/m^2) 
+[2024-02-04 14:28:48]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2024-02-04 14:28:48]  Removing uncertainty 
+[2024-02-04 14:28:48]  Removing avg_measurement_date (Julian Date) 
+[2024-02-04 14:28:48]  Removing std_dev_measurement_date (days) 
+[2024-02-04 14:28:48]  columns: Index(['irradiance'], dtype='object') 
+[2024-02-04 14:28:48]  Index(['irradiance'], dtype='object') 
+[2024-02-04 14:28:48]  median_irradiance: 1360.8007 
+[2024-02-04 14:28:48]  max_irradiance: 1362.2768 
+[2024-02-04 14:28:48]  min_irradiance: 1357.0238 
+[2024-02-04 14:28:48]  subtract_irradiance_value: 1357.0238 
+[2024-02-04 14:28:48]  Normalizing data... 
+[2024-02-04 14:28:48]  dataset size: 5689 frame_size: 7 
+[2024-02-04 14:28:48]  len(data): 5689 
+[2024-02-04 14:28:48]  dataset_x size: 5682 
+[2024-02-04 14:28:48]  dataset_y size: 5682 
+[2024-02-04 14:28:48]  data_size 5682 
+[2024-02-04 14:28:48]  test data size: 0 
+[2024-02-04 14:28:48]  train data size: 5682 
+[2024-02-04 14:28:48]  test_data starting index: 5682 
+[2024-02-04 14:28:48]  train_x size from split: 5682 
+[2024-02-04 14:28:48]  test_x size from split: 1 
+[2024-02-04 14:28:48]  data_size 5682 
+[2024-02-04 14:28:48]  test data size: 0 
+[2024-02-04 14:28:48]  train data size: 5682 
+[2024-02-04 14:28:48]  test_data starting index: 5682 
+[2024-02-04 14:28:48]  train_y size from split: 5682 
+[2024-02-04 14:28:48]  test_y size from split: 1 
+[2024-02-04 14:28:48]  type of train_y: <class 'numpy.ndarray'> 
+[2024-02-04 14:28:48]  train_x.shape (5682, 7, 1) 
+[2024-02-04 14:28:48]  train_y.shape (5682, 1) 
+[2024-02-04 14:28:48]  test_x (1, 7, 1) 
+[2024-02-04 14:28:48]  test_y (1, 1) 
+[2024-02-04 14:28:48]  train_y[0:1] [[0.69255663]] 
+[2024-02-04 14:28:48]  orig date size:  5689 
+[2024-02-04 14:28:48]  Time taken to load and prepare data: 0 second(s) 
+[2024-02-04 14:28:48]  train_x.shape (5682, 7, 1) 
+[2024-02-04 14:28:48]  train_y.shape (5682, 1) 
+[2024-02-04 14:28:48]  n_timesteps, n_features, n_outputs 7 1 1 
+[2024-02-04 14:28:48]  train_x.shape inside if cnn (5682, 7, 1) 
+[2024-02-04 14:28:48]  train_y.shape inside if cnn (5682, 1, 1) 
+[2024-02-04 14:28:48]  input_shape=(n_timesteps,n_features): (7, 1) 
+[2024-02-04 14:28:48]  Adding the attention layer... 
+[2024-02-04 14:28:49]  model.summary 
+[2024-02-04 14:28:49]  model verbose: 2 
+[2024-02-04 14:29:16]  args: {'dataset_name': 'TCTE', 'result_file_name': 'my_result_file.csv', 'epochs': 10, 'number_of_days': 10, 'k_steps': 5, 'verbose': False} 
+[2024-02-04 14:29:16]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2024-02-04 14:29:16]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2024-02-04 14:29:16]  len(dataset.values) 1650 
+[2024-02-04 14:29:16]  Removing instrument_accuracy_1au (W/m^2) 
+[2024-02-04 14:29:16]  Removing instrument_precision_1au (W/m^2) 
+[2024-02-04 14:29:16]  Removing solar_standard_deviation_1au (W/m^2) 
+[2024-02-04 14:29:16]  Removing measurement_uncertainty_1au (W/m^2) 
+[2024-02-04 14:29:16]  Removing tsi_true_earth (W/m^2) 
+[2024-02-04 14:29:16]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2024-02-04 14:29:16]  Removing instrument_precision_true_earth (W/m^2) 
+[2024-02-04 14:29:16]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2024-02-04 14:29:16]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2024-02-04 14:29:16]  Removing avg_measurement_date (Julian Date) 
+[2024-02-04 14:29:16]  Removing std_dev_measurement_date (days) 
+[2024-02-04 14:29:16]  Removing instrument_accuracy_1au (W/m^2) 
+[2024-02-04 14:29:16]  Removing instrument_precision_1au (W/m^2) 
+[2024-02-04 14:29:16]  Removing solar_standard_deviation_1au (W/m^2) 
+[2024-02-04 14:29:16]  Removing measurement_uncertainty_1au (W/m^2) 
+[2024-02-04 14:29:16]  Removing tsi_true_earth (W/m^2) 
+[2024-02-04 14:29:16]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2024-02-04 14:29:16]  Removing instrument_precision_true_earth (W/m^2) 
+[2024-02-04 14:29:16]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2024-02-04 14:29:16]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2024-02-04 14:29:16]  Removing avg_measurement_date (Julian Date) 
+[2024-02-04 14:29:16]  Removing std_dev_measurement_date (days) 
+[2024-02-04 14:29:16]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2024-02-04 14:29:16]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2024-02-04 14:29:16]  len(irradiance_orig): 1650 
+[2024-02-04 14:29:16]  len(dataset.values) 1650 
+[2024-02-04 14:29:16]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2024-02-04 14:29:16]  Reconstructing data set with a trained TSINet model 
+[2024-02-04 14:29:16]  Loading model file: models/tsinet_model 
+[2024-02-04 14:29:16]  Check if file exists: models/tsinet_model : True 
+[2024-02-04 14:29:16]  Reconstruction will be performed using the model file: models/tsinet_model 
+[2024-02-04 14:29:17]  Returning loaded model from file: models/tsinet_model 
+[2024-02-04 14:29:17]  TSInet model: <keras.src.engine.sequential.Sequential object at 0x2dc54da00> 
+[2024-02-04 14:29:17]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2024-02-04 14:29:17]  input_x.shape: (1, 7, 1) 
+[2024-02-04 14:29:17]  Check model data file: models/tsinet_train_x.sav 
+[2024-02-04 14:29:17]  loading model objects with pickle None  from file:  models/tsinet_train_x.sav 
+[2024-02-04 14:29:17]  Check model data file: models/tsinet_train_y.sav 
+[2024-02-04 14:29:17]  loading model objects with pickle None  from file:  models/tsinet_train_y.sav 
+[2024-02-04 14:29:17]  Check model data file: models/tsinet_train_x.sav 
+[2024-02-04 14:29:17]  loading model objects with pickle None  from file:  models/tsinet_train_x.sav 
+[2024-02-04 14:29:17]  Check model data file: models/tsinet_train_y.sav 
+[2024-02-04 14:29:17]  loading model objects with pickle None  from file:  models/tsinet_train_y.sav 
+[2024-02-04 14:29:17]  Working on  2 of 10 
+[2024-02-04 14:29:17]  Working on  3 of 10 
+[2024-02-04 14:29:17]  Working on  4 of 10 
+[2024-02-04 14:29:18]  Working on  5 of 10 
+[2024-02-04 14:29:18]  Working on  6 of 10 
+[2024-02-04 14:29:18]  Re-Fitting models... 
+[2024-02-04 14:29:25]  Working on  7 of 10 
+[2024-02-04 14:29:25]  Working on  8 of 10 
+[2024-02-04 14:29:25]  Working on  9 of 10 
+[2024-02-04 14:29:25]  Working on  10 of 10 
+[2024-02-04 14:29:25]  len(build_predictions): 16 
+[2024-02-04 14:29:25]  Total time: 9034 
